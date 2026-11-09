@@ -430,11 +430,11 @@ function sceneCake() {
       <div class="tier t3"></div>
       <div class="cake-candles" aria-hidden="true"><span class="cake-candle"><span class="cake-flame"></span></span><span class="cake-candle"><span class="cake-flame"></span></span><span class="cake-candle"><span class="cake-flame"></span></span></div>
     </div>
-    <p class="hint" id="hc" aria-live="polite">Layer by layer.</p>
+    <p class="hint" id="hc" aria-live="polite">it's baking </p>
     <button class="btn" id="blow-cake" type="button" hidden>Blow out the candles</button></section>`);
   later(() => {
-    $("#ck", s).textContent = `Happy birthday, ${GIFT.to}.`;
-    $("#hc", s).textContent = "Make a wish, then blow out the candles.";
+    $("#ck", s).textContent = `Happy birthday baby, ${GIFT.to}.`;
+    $("#hc", s).textContent = "Blow out the candles.";
     $("#blow-cake", s).hidden = false;
   }, 3900);
   const cake = $("#cake", s), blow = $("#blow-cake", s);
@@ -453,7 +453,7 @@ function sceneCake() {
 /* 2. candle */
 function scene2() {
   const s = el(`<section class="scene">
-    <h2>Make a wish.</h2>
+    <h2>Make another wish.</h2>
     <div class="wish-tableau">${pet("panda", "rest")}<button class="candlebtn" id="cbtn" aria-label="Light the candle, tap again to blow it out"><svg class="candle" viewBox="0 0 120 230" id="candle" aria-hidden="true">
       <defs><radialGradient id="gl"><stop offset="0" stop-color="#f4c97a" stop-opacity=".55"/><stop offset="1" stop-color="#f4c97a" stop-opacity="0"/></radialGradient></defs>
       <ellipse cx="60" cy="214" rx="54" ry="10" fill="#b8587a"/>
